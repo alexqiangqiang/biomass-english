@@ -26,6 +26,17 @@ th,td{text-align:left;padding:12px;border-bottom:1px solid #eee;vertical-align:t
 <script>
 function speak(text){speechSynthesis.cancel(); const u=new SpeechSynthesisUtterance(text);u.lang="en-US";u.rate=.82;speechSynthesis.speak(u)}
 </script>
+
+<style>
+.bottom-home{
+  position:fixed;left:12px;right:12px;bottom:12px;z-index:1000;
+  display:block;text-align:center;text-decoration:none;
+  background:#111827;color:#fff;padding:12px 16px;border-radius:12px;
+  font-weight:700;font-size:15px;box-shadow:0 4px 14px rgba(0,0,0,.22)
+}
+@media(min-width:700px){.bottom-home{left:auto;right:24px;width:220px}}
+body{padding-bottom:72px}
+</style>
 </head>
 <body>
 <nav class="site-nav">
@@ -37,7 +48,7 @@ function speak(text){speechSynthesis.cancel(); const u=new SpeechSynthesisUttera
 <header><main>
 <h1>Biomass Engineering English</h1>
 <div>Lesson 1 — Steam Explosion & Fermentation</div>
-<div style="text-align:center;margin:28px 0 10px"><a href="index.html" style="display:inline-block;text-decoration:none;background:#111827;color:#fff;padding:10px 18px;border-radius:10px;font-weight:600">← 返回课程目录</a></div></main></header>
+</main></header>
 <main>
 <div class="card">
 <h2>Today's goal</h2>
@@ -96,5 +107,5 @@ Black pellets can have different fuel properties depending on the raw material a
 <p class="cn">我们使用蒸汽爆破作为预处理工艺。高压蒸汽渗透进入生物质。在短暂的停留时间后，压力快速释放。这会改变生物质的纤维结构，并可能改善其燃料性能。</p>
 </div>
 </main>
-</body>
+<a class="bottom-home" href="index.html">← 返回课程目录</a></body>
 </html>

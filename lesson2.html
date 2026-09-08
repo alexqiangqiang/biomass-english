@@ -21,6 +21,17 @@ footer{text-align:center;color:#6b7280;padding:25px;font-size:13px}
 .site-nav a.home{background:#111827;color:#fff}
 </style>
 </style>
+
+<style>
+.bottom-home{
+  position:fixed;left:12px;right:12px;bottom:12px;z-index:1000;
+  display:block;text-align:center;text-decoration:none;
+  background:#111827;color:#fff;padding:12px 16px;border-radius:12px;
+  font-weight:700;font-size:15px;box-shadow:0 4px 14px rgba(0,0,0,.22)
+}
+@media(min-width:700px){.bottom-home{left:auto;right:24px;width:220px}}
+body{padding-bottom:72px}
+</style>
 </head>
 <body>
 <nav class="site-nav">
@@ -113,9 +124,9 @@ footer{text-align:center;color:#6b7280;padding:25px;font-size:13px}
 <section class="section"><h2>8. Ten Key Sentences</h2><div class="card"><ol>
 <li>We use a batch fermentation process.</li><li>What is the fermentation temperature?</li><li>How long does the fermentation take?</li><li>How do you control the pH?</li><li>How do you prevent contamination?</li><li>We sterilize the tank before inoculation.</li><li>The culture medium provides nutrients for microorganisms.</li><li>We use microorganisms to start the fermentation process.</li><li>It takes about 48 hours.</li><li>This is my first time visiting your factory.</li>
 </ol></div></section>
-<div style="text-align:center;margin:28px 0 10px"><a href="index.html" style="display:inline-block;text-decoration:none;background:#111827;color:#fff;padding:10px 18px;border-radius:10px;font-weight:600">← 返回课程目录</a></div></main>
+</main>
 <footer>Biomass Engineering English · Lesson 2</footer>
 <script>
 function speak(text){if(!('speechSynthesis' in window)){alert('Your browser does not support speech synthesis.');return}speechSynthesis.cancel();let u=new SpeechSynthesisUtterance(text);u.lang='en-US';u.rate=.88;speechSynthesis.speak(u)}
 </script>
-</body></html>
+<a class="bottom-home" href="index.html">← 返回课程目录</a></body></html>

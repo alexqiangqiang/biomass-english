@@ -23,9 +23,83 @@ th,td{text-align:left;padding:12px;border-bottom:1px solid #eee;vertical-align:t
 .site-nav a.home{background:#111827;color:#fff}
 </style>
 </style>
+
 <script>
-function speak(text){speechSynthesis.cancel(); const u=new SpeechSynthesisUtterance(text);u.lang="en-US";u.rate=.82;speechSynthesis.speak(u)}
+(function(){
+  let voices=[];
+  let selectedVoice=null;
+
+  function loadVoices(){
+    if(!('speechSynthesis' in window)) return;
+    voices=speechSynthesis.getVoices()||[];
+    selectedVoice =
+      voices.find(v=>v.lang && v.lang.toLowerCase()==='en-us') ||
+      voices.find(v=>v.lang && v.lang.toLowerCase().startsWith('en-us')) ||
+      voices.find(v=>v.lang && v.lang.toLowerCase().startsWith('en-gb')) ||
+      voices.find(v=>v.lang && v.lang.toLowerCase().startsWith('en')) ||
+      null;
+  }
+
+  function status(text, ms=1800){
+    let el=document.getElementById('tts-status');
+    if(!el){
+      el=document.createElement('div');
+      el.id='tts-status';
+      el.className='tts-status';
+      document.body.appendChild(el);
+    }
+    el.textContent=text;
+    el.style.display='block';
+    clearTimeout(window.__ttsTimer);
+    window.__ttsTimer=setTimeout(()=>el.style.display='none',ms);
+  }
+
+  function unlock(){
+    if(!('speechSynthesis' in window)) return;
+    loadVoices();
+    try { speechSynthesis.resume(); } catch(e){}
+  }
+
+  window.speak=function(text){
+    if(!('speechSynthesis' in window)){
+      status('此浏览器不支持网页发音，请使用 Chrome、Edge 或 Safari。',3000);
+      return;
+    }
+    text=String(text||'').trim();
+    if(!text) return;
+
+    loadVoices();
+    try { speechSynthesis.cancel(); speechSynthesis.resume(); } catch(e){}
+
+    const u=new SpeechSynthesisUtterance(text);
+    u.lang=selectedVoice ? selectedVoice.lang : 'en-US';
+    if(selectedVoice) u.voice=selectedVoice;
+    u.rate=0.86;
+    u.pitch=1;
+    u.volume=1;
+
+    u.onstart=()=>status('🔊 正在播放……');
+    u.onend=()=>status('播放完成');
+    u.onerror=()=>status('播放失败，请检查设备音量后再试。',3000);
+
+    try { speechSynthesis.speak(u); } catch(e){
+      status('无法启动发音，请再点击一次。',3000);
+    }
+    setTimeout(()=>{try{speechSynthesis.resume()}catch(e){}},100);
+  };
+
+  window.testAudio=function(){
+    window.speak('Hello. Welcome to Biomass Engineering English.');
+  };
+
+  document.addEventListener('click',unlock,{once:true});
+  if('speechSynthesis' in window){
+    loadVoices();
+    speechSynthesis.onvoiceschanged=loadVoices;
+  }
+})();
 </script>
+
 
 <style>
 .bottom-home{
@@ -45,7 +119,7 @@ body{padding-bottom:72px}
 <a href="lesson2.html">Lesson 2</a>
 </nav>
 
-<header><main>
+<header><main><button onclick="testAudio()">🔊 测试发音</button>
 <h1>Biomass Engineering English</h1>
 <div>Lesson 1 — Steam Explosion & Fermentation</div>
 </main></header>

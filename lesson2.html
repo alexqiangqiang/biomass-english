@@ -1,206 +1,199 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="zh-CN">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width,initial-scale=1">
-<meta name="theme-color" content="#111827">
-<title>Biomass Engineering English — Lesson 2</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Biomass Engineering English - Lesson 2</title>
 <style>
-*{box-sizing:border-box}body{margin:0;background:#f3f4f6;color:#1f2937;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Arial,sans-serif;line-height:1.6}
-header{background:#111827;color:#fff;text-align:center;padding:28px 16px}header h1{margin:0 0 6px;font-size:25px}header p{margin:0;color:#d1d5db}
-main{max-width:900px;margin:auto;padding:16px}.section{margin:18px 0}.section h2{font-size:21px;border-left:4px solid #111827;padding-left:10px}
-.card{background:#fff;border-radius:14px;padding:16px;margin:12px 0;box-shadow:0 2px 8px rgba(0,0,0,.06)}
-.word{font-size:20px;font-weight:700}.ipa{color:#6b7280;font-size:14px;margin-left:6px}.cn{font-weight:600}.def{font-size:14px;color:#4b5563}
-.example{margin-top:10px;padding:10px;background:#f9fafb;border-radius:9px}button{border:0;border-radius:9px;background:#111827;color:#fff;padding:8px 11px;margin:6px 4px 0 0;font-size:14px;cursor:pointer}
-li{margin:9px 0}.sentence{font-weight:600;font-size:17px}.tag{display:inline-block;background:#e5e7eb;border-radius:20px;padding:3px 9px;font-size:12px}
-footer{text-align:center;color:#6b7280;padding:25px;font-size:13px}
-
-<style>
-.site-nav{position:sticky;top:0;z-index:999;background:#fff;border-bottom:1px solid #e5e7eb;padding:9px 12px;display:flex;gap:8px;align-items:center;box-shadow:0 1px 5px rgba(0,0,0,.08)}
-.site-nav a{color:#111827;text-decoration:none;font-size:14px;font-weight:600;padding:7px 10px;border-radius:8px;background:#f3f4f6;white-space:nowrap}
-.site-nav a.home{background:#111827;color:#fff}
-</style>
-</style>
-
-<style>
-.bottom-home{
-  position:fixed;left:12px;right:12px;bottom:12px;z-index:1000;
-  display:block;text-align:center;text-decoration:none;
-  background:#111827;color:#fff;padding:12px 16px;border-radius:12px;
-  font-weight:700;font-size:15px;box-shadow:0 4px 14px rgba(0,0,0,.22)
-}
-@media(min-width:700px){.bottom-home{left:auto;right:24px;width:220px}}
-body{padding-bottom:72px}
+*{box-sizing:border-box}body{margin:0;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Arial,sans-serif;background:#f5f7fa;color:#222}
+header{background:#fff;border-bottom:1px solid #ddd;position:sticky;top:0;z-index:10}
+.nav{max-width:1000px;margin:auto;padding:14px 18px;display:flex;justify-content:space-between;align-items:center;gap:10px}
+.nav a{text-decoration:none;color:#333;font-weight:600}
+.container{max-width:1000px;margin:0 auto;padding:22px 18px 90px}
+h1{font-size:28px;margin:8px 0}h2{margin-top:30px}.sub{color:#666}
+.card{background:#fff;border-radius:14px;padding:18px;margin:12px 0;box-shadow:0 2px 8px rgba(0,0,0,.06)}
+.word{font-size:21px;font-weight:700}.ipa{color:#666;margin:5px 0}.cn{font-size:17px;margin:6px 0}
+.en{color:#444;font-size:15px}.play{float:right;border:0;background:#222;color:white;border-radius:50%;width:42px;height:42px;font-size:20px;cursor:pointer}
+.play:active{transform:scale(.95)}.section{margin-top:26px}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:12px}
+.sentence .word{font-size:18px}.sentence .cn{font-size:16px}
+.footer{position:fixed;bottom:0;left:0;right:0;background:#fff;border-top:1px solid #ddd;text-align:center;padding:10px}
+.footer a{text-decoration:none;color:#222;font-weight:600}
+.note{background:#eef3f7;border-radius:10px;padding:12px;margin:12px 0}
+@media(max-width:600px){h1{font-size:24px}.card{padding:15px}.word{padding-right:48px}}
 </style>
 </head>
 <body>
-<nav class="site-nav">
-<a class="home" href="index.html">← Lessons</a>
-<a href="lesson1.html">Lesson 1</a>
-<a href="lesson2.html">Lesson 2</a>
-</nav>
-
-<header><h1>Biomass Engineering English</h1><p>Lesson 2 — Fermentation Basics & Factory Communication</p></header>
-<main><button onclick="testAudio()">🔊 测试发音</button>
-
-<section class="section"><h2>1. Technical Vocabulary</h2>
-
-<div class="card"><div class="word">fermentation <span class="ipa">/ˌfɜːrmənˈteɪʃən/</span></div><div class="cn">发酵</div><div class="def">A biological process in which microorganisms convert organic materials into useful products.</div><div class="example">We use fermentation to produce liquid fertilizer and feed additives.<br><button onclick="speak('We use fermentation to produce liquid fertilizer and feed additives.')">🔊 Listen</button></div></div>
-
-<div class="card"><div class="word">fermentation tank <span class="ipa">/ˌfɜːrmənˈteɪʃən tæŋk/</span></div><div class="cn">发酵罐</div><div class="def">A tank used to control and carry out the fermentation process.</div><div class="example">The fermentation tank is equipped with temperature and pH sensors.<br><button onclick="speak('The fermentation tank is equipped with temperature and pH sensors.')">🔊 Listen</button></div></div>
-
-<div class="card"><div class="word">microorganism <span class="ipa">/ˌmaɪkroʊˈɔːrɡənɪzəm/</span></div><div class="cn">微生物</div><div class="def">A very small living organism, such as bacteria or yeast.</div><div class="example">We use microorganisms to start the fermentation process.<br><button onclick="speak('We use microorganisms to start the fermentation process.')">🔊 Listen</button></div></div>
-
-<div class="card"><div class="word">culture medium <span class="ipa">/ˈkʌltʃər ˈmiːdiəm/</span></div><div class="cn">培养基</div><div class="def">A material or liquid that provides nutrients for microorganisms to grow.</div><div class="example">The culture medium provides nutrients for microorganisms.<br><button onclick="speak('The culture medium provides nutrients for microorganisms.')">🔊 Listen</button></div></div>
-
-<div class="card"><div class="word">inoculation <span class="ipa">/ɪˌnɑːkjəˈleɪʃən/</span></div><div class="cn">接种</div><div class="def">The process of adding a desired microorganism or culture to a medium.</div><div class="example">The tank is sterilized before inoculation.<br><button onclick="speak('The tank is sterilized before inoculation.')">🔊 Listen</button></div></div>
-
-<div class="card"><div class="word">sterilization <span class="ipa">/ˌsterələˈzeɪʃən/</span></div><div class="cn">灭菌</div><div class="def">The process of killing or removing unwanted microorganisms.</div><div class="example">Sterilization helps prevent contamination.<br><button onclick="speak('Sterilization helps prevent contamination.')">🔊 Listen</button></div></div>
-
-<div class="card"><div class="word">sterilize <span class="ipa">/ˈsterəlaɪz/</span></div><div class="cn">灭菌（动词）</div><div class="def">To kill or remove microorganisms, especially unwanted ones.</div><div class="example">We sterilize the tank before inoculation.<br><button onclick="speak('We sterilize the tank before inoculation.')">🔊 Listen</button></div></div>
-
-<div class="card"><div class="word">contamination <span class="ipa">/kənˌtæməˈneɪʃən/</span></div><div class="cn">污染；杂菌污染</div><div class="def">The presence of unwanted microorganisms or other unwanted materials.</div><div class="example">We need to prevent contamination during fermentation.<br><button onclick="speak('We need to prevent contamination during fermentation.')">🔊 Listen</button></div></div>
-
-<div class="card"><div class="word">aeration <span class="ipa">/eəˈreɪʃən/</span></div><div class="cn">曝气；通气</div><div class="def">The process of supplying air or oxygen to a fermentation system.</div><div class="example">Aeration is important for aerobic fermentation.<br><button onclick="speak('Aeration is important for aerobic fermentation.')">🔊 Listen</button></div></div>
-
-<div class="card"><div class="word">agitation <span class="ipa">/ˌædʒəˈteɪʃən/</span></div><div class="cn">搅拌</div><div class="def">The process of mixing the material inside a tank.</div><div class="example">Agitation helps keep the material evenly mixed.<br><button onclick="speak('Agitation helps keep the material evenly mixed.')">🔊 Listen</button></div></div>
-
-<div class="card"><div class="word">nutrient <span class="ipa">/ˈnuːtriənt/</span></div><div class="cn">营养物质</div><div class="def">A substance that microorganisms need for growth and activity.</div><div class="example">The medium contains enough nutrients for the microorganisms.<br><button onclick="speak('The medium contains enough nutrients for the microorganisms.')">🔊 Listen</button></div></div>
-
-<div class="card"><div class="word">pH <span class="ipa">/ˌpiː ˈeɪtʃ/</span></div><div class="cn">pH值；酸碱度</div><div class="def">A measure of how acidic or alkaline a solution is.</div><div class="example">How do you control the pH?<br><button onclick="speak('How do you control the pH?')">🔊 Listen</button></div></div>
-
-<div class="card"><div class="word">temperature <span class="ipa">/ˈtemprətʃər/</span></div><div class="cn">温度</div><div class="def">A measure of how hot or cold something is.</div><div class="example">The fermentation temperature is around 35 degrees Celsius.<br><button onclick="speak('The fermentation temperature is around 35 degrees Celsius.')">🔊 Listen</button></div></div>
-
-<div class="card"><div class="word">residence time <span class="ipa">/ˈrezɪdəns taɪm/</span></div><div class="cn">停留时间</div><div class="def">The amount of time a material remains inside a reactor or tank.</div><div class="example">What is the residence time in the reactor?<br><button onclick="speak('What is the residence time in the reactor?')">🔊 Listen</button></div></div>
-
-<div class="card"><div class="word">batch fermentation <span class="ipa">/bætʃ ˌfɜːrmənˈteɪʃən/</span></div><div class="cn">分批发酵</div><div class="def">A fermentation process in which materials are charged into a tank and processed as one batch.</div><div class="example">We use a batch fermentation process.<br><button onclick="speak('We use a batch fermentation process.')">🔊 Listen</button></div></div>
-</section>
-
-<section class="section"><h2>2. Factory Communication</h2><div class="card"><span class="tag">Factory Visit</span>
-<ul>
-<li class="sentence">What type of fermentation process do you use? <button onclick="speak('What type of fermentation process do you use?')">🔊</button></li>
-<li class="sentence">Is it a batch process or a continuous process? <button onclick="speak('Is it a batch process or a continuous process?')">🔊</button></li>
-<li class="sentence">What is the fermentation temperature? <button onclick="speak('What is the fermentation temperature?')">🔊</button></li>
-<li class="sentence">How long does the fermentation take? <button onclick="speak('How long does the fermentation take?')">🔊</button></li>
-<li class="sentence">How do you control the pH? <button onclick="speak('How do you control the pH?')">🔊</button></li>
-<li class="sentence">How do you prevent contamination? <button onclick="speak('How do you prevent contamination?')">🔊</button></li>
-<li class="sentence">How do you sterilize the fermentation tank? <button onclick="speak('How do you sterilize the fermentation tank?')">🔊</button></li>
-<li class="sentence">What kind of microorganism do you use? <button onclick="speak('What kind of microorganism do you use?')">🔊</button></li>
-</ul></div></section>
-
-<section class="section"><h2>3. Useful Grammar — take + time</h2><div class="card">
-<p><b>It takes + 时间</b> = “需要多长时间”。</p>
-<p>It takes two hours. <button onclick="speak('It takes two hours.')">🔊</button></p>
-<p>It takes about 48 hours. <button onclick="speak('It takes about 48 hours.')">🔊</button></p>
-<p>How long does the fermentation take? <button onclick="speak('How long does the fermentation take?')">🔊</button></p>
-</div></section>
-
-<section class="section"><h2>4. Process Introduction</h2><div class="card">
-<p>We use fermentation to produce liquid fertilizer and feed additives.</p><button onclick="speak('We use fermentation to produce liquid fertilizer and feed additives.')">🔊 Listen</button>
-<p>First, we prepare the raw material. Then we sterilize the tank and culture medium. After that, we inoculate the microorganisms and start the fermentation process.</p><button onclick="speak('First, we prepare the raw material. Then we sterilize the tank and culture medium. After that, we inoculate the microorganisms and start the fermentation process.')">🔊 Listen</button>
-</div></section>
-
-<section class="section"><h2>5. Free Talk & Small Talk</h2><div class="card">
-<p><b>How was your trip?</b> — 你的旅途怎么样？</p><button onclick="speak('How was your trip?')">🔊</button>
-<p><b>It was great. This is my first time in Finland.</b></p><button onclick="speak('It was great. This is my first time in Finland.')">🔊</button>
-<p><b>No, I've been to Europe before, but this is my first time visiting your factory.</b></p><button onclick="speak('No, I have been to Europe before, but this is my first time visiting your factory.')">🔊</button>
-</div></section>
-
-<section class="section"><h2>6. Travel English</h2><div class="card"><ul>
-<li>I'd like to check in. <button onclick="speak('I would like to check in.')">🔊</button></li>
-<li>I have a reservation under the name Alex. <button onclick="speak('I have a reservation under the name Alex.')">🔊</button></li>
-<li>Could you tell me where the elevator is? <button onclick="speak('Could you tell me where the elevator is?')">🔊</button></li>
-<li>What time is breakfast? <button onclick="speak('What time is breakfast?')">🔊</button></li>
-<li>Which platform should I go to? <button onclick="speak('Which platform should I go to?')">🔊</button></li>
-<li>Does this train go to Helsinki? <button onclick="speak('Does this train go to Helsinki?')">🔊</button></li>
-<li>How long does the journey take? <button onclick="speak('How long does the journey take?')">🔊</button></li>
-</ul></div></section>
-
-<section class="section"><h2>7. One-Minute Speaking Practice</h2><div class="card">
-<p>Today I'd like to talk about fermentation.</p><p>We use fermentation to produce liquid fertilizer and feed additives.</p><p>We use a batch fermentation process.</p><p>The fermentation temperature is around 35 degrees Celsius.</p><p>The fermentation process takes about 48 hours.</p><p>We need to control the temperature and pH carefully.</p><p>We also need to prevent contamination.</p>
-<button onclick="speak('Today I would like to talk about fermentation. We use fermentation to produce liquid fertilizer and feed additives. We use a batch fermentation process. The fermentation temperature is around 35 degrees Celsius. The fermentation process takes about 48 hours. We need to control the temperature and pH carefully. We also need to prevent contamination.')">🔊 Listen to full practice</button>
-</div></section>
-
-<section class="section"><h2>8. Ten Key Sentences</h2><div class="card"><ol>
-<li>We use a batch fermentation process.</li><li>What is the fermentation temperature?</li><li>How long does the fermentation take?</li><li>How do you control the pH?</li><li>How do you prevent contamination?</li><li>We sterilize the tank before inoculation.</li><li>The culture medium provides nutrients for microorganisms.</li><li>We use microorganisms to start the fermentation process.</li><li>It takes about 48 hours.</li><li>This is my first time visiting your factory.</li>
-</ol></div></section>
-</main>
-<footer>Biomass Engineering English · Lesson 2</footer>
-
+<header><div class="nav"><a href="index.html">← 课程目录</a><span>Lesson 2</span><a href="lesson1.html">Lesson 1 →</a></div></header>
+<div class="container">
+<h1>Lesson 2 — Fermentation Basics & Factory Communication</h1>
+<p class="sub">发酵基础 · 工厂交流 · Small Talk · Travel English</p>
+<div class="note">🔊 点击每张卡片右上角的按钮，直接播放对应 MP3。音频文件位于 <code>audio/lesson2_001.mp3</code> ～ <code>audio/lesson2_049.mp3</code>。</div>
+<div class="section"><h2>1. Technical Vocabulary</h2><div class="grid"><div class="card">
+<button class="play" onclick="playAudio('lesson2_001.mp3')">▶</button>
+<div class="word">fermentation</div><div class="ipa">/ˌfɜːrmənˈteɪʃən/</div><div class="cn">发酵</div>
+<div class="en">the process of using microorganisms to convert materials into useful products</div></div><div class="card">
+<button class="play" onclick="playAudio('lesson2_002.mp3')">▶</button>
+<div class="word">fermentation tank</div><div class="ipa">/ˌfɜːrmənˈteɪʃən tæŋk/</div><div class="cn">发酵罐</div>
+<div class="en">a tank used for fermentation</div></div><div class="card">
+<button class="play" onclick="playAudio('lesson2_003.mp3')">▶</button>
+<div class="word">microorganism</div><div class="ipa">/ˌmaɪkroʊˈɔːrɡənɪzəm/</div><div class="cn">微生物</div>
+<div class="en">a very small living organism, such as bacteria or yeast</div></div><div class="card">
+<button class="play" onclick="playAudio('lesson2_004.mp3')">▶</button>
+<div class="word">culture medium</div><div class="ipa">/ˈkʌltʃər ˈmiːdiəm/</div><div class="cn">培养基</div>
+<div class="en">a material or liquid that provides nutrients for microorganisms to grow</div></div><div class="card">
+<button class="play" onclick="playAudio('lesson2_005.mp3')">▶</button>
+<div class="word">inoculation</div><div class="ipa">/ɪˌnɑːkjəˈleɪʃən/</div><div class="cn">接种</div>
+<div class="en">the process of adding microorganisms to a culture medium</div></div><div class="card">
+<button class="play" onclick="playAudio('lesson2_006.mp3')">▶</button>
+<div class="word">sterilization</div><div class="ipa">/ˌsterələˈzeɪʃən/</div><div class="cn">灭菌</div>
+<div class="en">the process of killing or removing unwanted microorganisms</div></div><div class="card">
+<button class="play" onclick="playAudio('lesson2_007.mp3')">▶</button>
+<div class="word">sterilize</div><div class="ipa">/ˈsterəlaɪz/</div><div class="cn">灭菌</div>
+<div class="en">to kill or remove microorganisms</div></div><div class="card">
+<button class="play" onclick="playAudio('lesson2_008.mp3')">▶</button>
+<div class="word">contamination</div><div class="ipa">/kənˌtæməˈneɪʃən/</div><div class="cn">污染；杂菌污染</div>
+<div class="en">the presence of unwanted microorganisms or substances</div></div><div class="card">
+<button class="play" onclick="playAudio('lesson2_009.mp3')">▶</button>
+<div class="word">aeration</div><div class="ipa">/eəˈreɪʃən/</div><div class="cn">曝气；通气</div>
+<div class="en">the process of supplying air to a liquid or fermentation system</div></div><div class="card">
+<button class="play" onclick="playAudio('lesson2_010.mp3')">▶</button>
+<div class="word">agitation</div><div class="ipa">/ˌædʒəˈteɪʃən/</div><div class="cn">搅拌</div>
+<div class="en">the process of mixing a liquid or material</div></div><div class="card">
+<button class="play" onclick="playAudio('lesson2_011.mp3')">▶</button>
+<div class="word">nutrient</div><div class="ipa">/ˈnuːtriənt/</div><div class="cn">营养物质</div>
+<div class="en">a substance that provides nourishment for growth</div></div><div class="card">
+<button class="play" onclick="playAudio('lesson2_012.mp3')">▶</button>
+<div class="word">pH</div><div class="ipa">/ˌpiː ˈeɪtʃ/</div><div class="cn">酸碱度</div>
+<div class="en">a measure of how acidic or alkaline a solution is</div></div><div class="card">
+<button class="play" onclick="playAudio('lesson2_013.mp3')">▶</button>
+<div class="word">temperature</div><div class="ipa">/ˈtemprətʃər/</div><div class="cn">温度</div>
+<div class="en">the degree of heat in a substance or system</div></div><div class="card">
+<button class="play" onclick="playAudio('lesson2_014.mp3')">▶</button>
+<div class="word">residence time</div><div class="ipa">/ˈrezɪdəns taɪm/</div><div class="cn">停留时间</div>
+<div class="en">the amount of time a material remains inside a process or reactor</div></div><div class="card">
+<button class="play" onclick="playAudio('lesson2_015.mp3')">▶</button>
+<div class="word">batch fermentation</div><div class="ipa">/bætʃ ˌfɜːrmənˈteɪʃən/</div><div class="cn">批式发酵</div>
+<div class="en">a fermentation process carried out in separate batches</div></div></div></div><div class="section"><h2>2. Factory Questions & Useful Sentences</h2><div class="card sentence">
+<button class="play" onclick="playAudio('lesson2_016.mp3')">▶</button>
+<div class="word">What type of fermentation process do you use?</div><div class="ipa">/wʌt taɪp əv ˌfɜːrmənˈteɪʃən ˈprɑːses duː juː juːz/</div><div class="cn">你们使用什么类型的发酵工艺？</div>
+<div class="en">A question about the type of fermentation process used.</div></div><div class="card sentence">
+<button class="play" onclick="playAudio('lesson2_017.mp3')">▶</button>
+<div class="word">Is it a batch process or a continuous process?</div><div class="ipa">/ɪz ɪt ə bætʃ ˈprɑːses ɔːr ə kənˈtɪnjuəs ˈprɑːses/</div><div class="cn">这是批式工艺还是连续工艺？</div>
+<div class="en">A question asking whether the process is batch or continuous.</div></div><div class="card sentence">
+<button class="play" onclick="playAudio('lesson2_018.mp3')">▶</button>
+<div class="word">What is the fermentation temperature?</div><div class="ipa">/wʌt ɪz ðə ˌfɜːrmənˈteɪʃən ˈtemprətʃər/</div><div class="cn">发酵温度是多少？</div>
+<div class="en">A question about the operating temperature.</div></div><div class="card sentence">
+<button class="play" onclick="playAudio('lesson2_019.mp3')">▶</button>
+<div class="word">How long does the fermentation take?</div><div class="ipa">/haʊ lɔːŋ dʌz ðə ˌfɜːrmənˈteɪʃən teɪk/</div><div class="cn">发酵需要多长时间？</div>
+<div class="en">A question about fermentation duration.</div></div><div class="card sentence">
+<button class="play" onclick="playAudio('lesson2_020.mp3')">▶</button>
+<div class="word">How do you control the pH?</div><div class="ipa">/haʊ duː juː kənˈtroʊl ðə piː eɪtʃ/</div><div class="cn">你们如何控制 pH？</div>
+<div class="en">A question about pH control.</div></div><div class="card sentence">
+<button class="play" onclick="playAudio('lesson2_021.mp3')">▶</button>
+<div class="word">How do you prevent contamination?</div><div class="ipa">/haʊ duː juː prɪˈvent kənˌtæməˈneɪʃən/</div><div class="cn">你们如何防止污染？</div>
+<div class="en">A question about contamination prevention.</div></div><div class="card sentence">
+<button class="play" onclick="playAudio('lesson2_022.mp3')">▶</button>
+<div class="word">How do you sterilize the fermentation tank?</div><div class="ipa">/haʊ duː juː ˈsterəlaɪz ðə ˌfɜːrmənˈteɪʃən tæŋk/</div><div class="cn">你们如何对发酵罐灭菌？</div>
+<div class="en">A question about tank sterilization.</div></div><div class="card sentence">
+<button class="play" onclick="playAudio('lesson2_023.mp3')">▶</button>
+<div class="word">What kind of microorganism do you use?</div><div class="ipa">/wʌt kaɪnd əv ˌmaɪkroʊˈɔːrɡənɪzəm duː juː juːz/</div><div class="cn">你们使用什么类型的微生物？</div>
+<div class="en">A question about the microorganisms used.</div></div><div class="card sentence">
+<button class="play" onclick="playAudio('lesson2_024.mp3')">▶</button>
+<div class="word">It takes two hours.</div><div class="ipa">/ɪt teɪks tuː ˈaʊərz/</div><div class="cn">需要两个小时。</div>
+<div class="en">Used to state how long a process takes.</div></div><div class="card sentence">
+<button class="play" onclick="playAudio('lesson2_025.mp3')">▶</button>
+<div class="word">It takes about 48 hours.</div><div class="ipa">/ɪt teɪks əˈbaʊt ˌfɔːrti eɪt ˈaʊərz/</div><div class="cn">大约需要48小时。</div>
+<div class="en">Used to state an approximate process duration.</div></div><div class="card sentence">
+<button class="play" onclick="playAudio('lesson2_026.mp3')">▶</button>
+<div class="word">We use fermentation to produce liquid fertilizer and feed additives.</div><div class="ipa">/wiː juːz ˌfɜːrmənˈteɪʃən tə prəˈduːs ˈlɪkwɪd ˈfaɪləzaɪər ænd fiːd ˈædətɪvz/</div><div class="cn">我们使用发酵来生产液体肥料和饲料添加剂。</div>
+<div class="en">A practical sentence for explaining production.</div></div><div class="card sentence">
+<button class="play" onclick="playAudio('lesson2_027.mp3')">▶</button>
+<div class="word">First, we prepare the raw material.</div><div class="ipa">/fɜːrst wiː prɪˈper ðə rɔː məˈtɪriəl/</div><div class="cn">首先，我们准备原料。</div>
+<div class="en">The first step in describing a process.</div></div><div class="card sentence">
+<button class="play" onclick="playAudio('lesson2_028.mp3')">▶</button>
+<div class="word">Then we sterilize the tank and culture medium.</div><div class="ipa">/ðen wiː ˈsterəlaɪz ðə tæŋk ænd ˈkʌltʃər ˈmiːdiəm/</div><div class="cn">然后我们对罐体和培养基进行灭菌。</div>
+<div class="en">A process-description sentence.</div></div><div class="card sentence">
+<button class="play" onclick="playAudio('lesson2_029.mp3')">▶</button>
+<div class="word">After that, we inoculate the microorganisms and start the fermentation process.</div><div class="ipa">/ˈæftər ðæt wiː ɪˈnɑːkjəleɪt ðə ˌmaɪkroʊˈɔːrɡənɪzəmz ænd stɑːrt ðə ˌfɜːrmənˈteɪʃən ˈprɑːses/</div><div class="cn">之后，我们接种微生物并开始发酵过程。</div>
+<div class="en">A process-description sentence.</div></div><div class="card sentence">
+<button class="play" onclick="playAudio('lesson2_030.mp3')">▶</button>
+<div class="word">The culture medium provides nutrients for microorganisms.</div><div class="ipa">/ðə ˈkʌltʃər ˈmiːdiəm prəˈvaɪdz ˈnuːtriənts fər ˌmaɪkroʊˈɔːrɡənɪzəmz/</div><div class="cn">培养基为微生物提供营养物质。</div>
+<div class="en">Explains the function of the culture medium.</div></div><div class="card sentence">
+<button class="play" onclick="playAudio('lesson2_031.mp3')">▶</button>
+<div class="word">Sterilization helps prevent contamination.</div><div class="ipa">/ˌsterələˈzeɪʃən helps prɪˈvent kənˌtæməˈneɪʃən/</div><div class="cn">灭菌有助于防止污染。</div>
+<div class="en">Explains why sterilization is important.</div></div><div class="card sentence">
+<button class="play" onclick="playAudio('lesson2_032.mp3')">▶</button>
+<div class="word">The tank is sterilized before inoculation.</div><div class="ipa">/ðə tæŋk ɪz ˈsterəlaɪzd bɪˈfɔːr ɪˌnɑːkjəˈleɪʃən/</div><div class="cn">接种前对罐体进行灭菌。</div>
+<div class="en">Explains the sequence of sterilization and inoculation.</div></div><div class="card sentence">
+<button class="play" onclick="playAudio('lesson2_033.mp3')">▶</button>
+<div class="word">We use microorganisms to start the fermentation process.</div><div class="ipa">/wiː juːz ˌmaɪkroʊˈɔːrɡənɪzəmz tə stɑːrt ðə ˌfɜːrmənˈteɪʃən ˈprɑːses/</div><div class="cn">我们使用微生物启动发酵过程。</div>
+<div class="en">A simple explanation of the role of microorganisms.</div></div><div class="card sentence">
+<button class="play" onclick="playAudio('lesson2_034.mp3')">▶</button>
+<div class="word">How was your trip?</div><div class="ipa">/haʊ wəz jʊr trɪp/</div><div class="cn">你的旅行怎么样？</div>
+<div class="en">A useful small-talk question.</div></div><div class="card sentence">
+<button class="play" onclick="playAudio('lesson2_035.mp3')">▶</button>
+<div class="word">It was great. This is my first time in Finland.</div><div class="ipa">/ɪt wəz ɡreɪt ðɪs ɪz maɪ fɜːrst taɪm ɪn ˈfɪnlənd/</div><div class="cn">很好。这是我第一次来芬兰。</div>
+<div class="en">A natural travel and factory-visit response.</div></div><div class="card sentence">
+<button class="play" onclick="playAudio('lesson2_036.mp3')">▶</button>
+<div class="word">No, I've been to Europe before, but this is my first time visiting your factory.</div><div class="ipa">/noʊ aɪv bɪn tə ˈjʊrəp bɪˈfɔːr bət ðɪs ɪz maɪ fɜːrst taɪm ˈvɪzɪtɪŋ jʊr ˈfæktəri/</div><div class="cn">没有，我以前来过欧洲，但这是我第一次参观你们的工厂。</div>
+<div class="en">Useful small talk when visiting a factory.</div></div><div class="card sentence">
+<button class="play" onclick="playAudio('lesson2_037.mp3')">▶</button>
+<div class="word">I'd like to check in.</div><div class="ipa">/aɪd laɪk tə tʃek ɪn/</div><div class="cn">我想办理入住。</div>
+<div class="en">Useful at a hotel.</div></div><div class="card sentence">
+<button class="play" onclick="playAudio('lesson2_038.mp3')">▶</button>
+<div class="word">I have a reservation under the name Alex.</div><div class="ipa">/aɪ hæv ə ˌrezərˈveɪʃən ˈʌndər ðə neɪm ˈæləks/</div><div class="cn">我用 Alex 的名字订了房间。</div>
+<div class="en">Useful at a hotel.</div></div><div class="card sentence">
+<button class="play" onclick="playAudio('lesson2_039.mp3')">▶</button>
+<div class="word">Could you tell me where the elevator is?</div><div class="ipa">/kʊd juː tel miː wer ði ˈeləveɪtər ɪz/</div><div class="cn">请问电梯在哪里？</div>
+<div class="en">Useful in a hotel or building.</div></div><div class="card sentence">
+<button class="play" onclick="playAudio('lesson2_040.mp3')">▶</button>
+<div class="word">What time is breakfast?</div><div class="ipa">/wʌt taɪm ɪz ˈbrekfəst/</div><div class="cn">早餐几点开始？</div>
+<div class="en">Useful at a hotel.</div></div><div class="card sentence">
+<button class="play" onclick="playAudio('lesson2_041.mp3')">▶</button>
+<div class="word">Which platform should I go to?</div><div class="ipa">/wɪtʃ ˈplætfɔːrm ʃʊd aɪ ɡoʊ tuː/</div><div class="cn">我应该去哪个站台？</div>
+<div class="en">Useful when taking a train.</div></div><div class="card sentence">
+<button class="play" onclick="playAudio('lesson2_042.mp3')">▶</button>
+<div class="word">Does this train go to Helsinki?</div><div class="ipa">/dʌz ðɪs treɪn ɡoʊ tə ˈhelsɪŋki/</div><div class="cn">这趟火车去赫尔辛基吗？</div>
+<div class="en">Useful at a railway station.</div></div><div class="card sentence">
+<button class="play" onclick="playAudio('lesson2_043.mp3')">▶</button>
+<div class="word">How long does the journey take?</div><div class="ipa">/haʊ lɔːŋ dʌz ðə ˈdʒɜːrni teɪk/</div><div class="cn">旅程需要多长时间？</div>
+<div class="en">Useful when asking about travel time.</div></div><div class="card sentence">
+<button class="play" onclick="playAudio('lesson2_044.mp3')">▶</button>
+<div class="word">Today I'd like to talk about fermentation.</div><div class="ipa">/təˈdeɪ aɪd laɪk tə tɔːk əˈbaʊt ˌfɜːrmənˈteɪʃən/</div><div class="cn">今天我想谈谈发酵。</div>
+<div class="en">Opening sentence for a technical introduction.</div></div><div class="card sentence">
+<button class="play" onclick="playAudio('lesson2_045.mp3')">▶</button>
+<div class="word">We use a batch fermentation process.</div><div class="ipa">/wiː juːz ə bætʃ ˌfɜːrmənˈteɪʃən ˈprɑːses/</div><div class="cn">我们采用批式发酵工艺。</div>
+<div class="en">A concise factory-process sentence.</div></div><div class="card sentence">
+<button class="play" onclick="playAudio('lesson2_046.mp3')">▶</button>
+<div class="word">The fermentation temperature is around 35 degrees Celsius.</div><div class="ipa">/ðə ˌfɜːrmənˈteɪʃən ˈtemprətʃər ɪz əˈraʊnd ˌθɜːrti faɪv dɪˈɡriːz ˈselsiəs/</div><div class="cn">发酵温度大约是35摄氏度。</div>
+<div class="en">A useful process parameter sentence.</div></div><div class="card sentence">
+<button class="play" onclick="playAudio('lesson2_047.mp3')">▶</button>
+<div class="word">The fermentation process takes about 48 hours.</div><div class="ipa">/ðə ˌfɜːrmənˈteɪʃən ˈprɑːses teɪks əˈbaʊt ˌfɔːrti eɪt ˈaʊərz/</div><div class="cn">发酵过程大约需要48小时。</div>
+<div class="en">A useful process-duration sentence.</div></div><div class="card sentence">
+<button class="play" onclick="playAudio('lesson2_048.mp3')">▶</button>
+<div class="word">We need to control the temperature and pH carefully.</div><div class="ipa">/wiː niːd tə kənˈtroʊl ðə ˈtemprətʃər ænd piː eɪtʃ ˈkerfəli/</div><div class="cn">我们需要仔细控制温度和 pH。</div>
+<div class="en">A useful process-control sentence.</div></div><div class="card sentence">
+<button class="play" onclick="playAudio('lesson2_049.mp3')">▶</button>
+<div class="word">We also need to prevent contamination.</div><div class="ipa">/wiː ˈɔːlsoʊ niːd tə prɪˈvent kənˌtæməˈneɪʃən/</div><div class="cn">我们还需要防止污染。</div>
+<div class="en">A useful contamination-control sentence.</div></div></div>
+<div class="section"><h2>3. Speaking Practice</h2>
+<div class="card">
+<p>Today I'd like to talk about fermentation.</p>
+<p>We use a batch fermentation process.</p>
+<p>The fermentation temperature is around 35 degrees Celsius.</p>
+<p>The fermentation process takes about 48 hours.</p>
+<p>We need to control the temperature and pH carefully.</p>
+<p>We also need to prevent contamination.</p>
+</div></div>
+</div>
+<div class="footer"><a href="index.html">← 返回课程目录</a></div>
 <script>
-(function(){
-  let voices=[];
-  let selectedVoice=null;
-
-  function loadVoices(){
-    if(!('speechSynthesis' in window)) return;
-    voices=speechSynthesis.getVoices()||[];
-    selectedVoice =
-      voices.find(v=>v.lang && v.lang.toLowerCase()==='en-us') ||
-      voices.find(v=>v.lang && v.lang.toLowerCase().startsWith('en-us')) ||
-      voices.find(v=>v.lang && v.lang.toLowerCase().startsWith('en-gb')) ||
-      voices.find(v=>v.lang && v.lang.toLowerCase().startsWith('en')) ||
-      null;
-  }
-
-  function status(text, ms=1800){
-    let el=document.getElementById('tts-status');
-    if(!el){
-      el=document.createElement('div');
-      el.id='tts-status';
-      el.className='tts-status';
-      document.body.appendChild(el);
-    }
-    el.textContent=text;
-    el.style.display='block';
-    clearTimeout(window.__ttsTimer);
-    window.__ttsTimer=setTimeout(()=>el.style.display='none',ms);
-  }
-
-  function unlock(){
-    if(!('speechSynthesis' in window)) return;
-    loadVoices();
-    try { speechSynthesis.resume(); } catch(e){}
-  }
-
-  window.speak=function(text){
-    if(!('speechSynthesis' in window)){
-      status('此浏览器不支持网页发音，请使用 Chrome、Edge 或 Safari。',3000);
-      return;
-    }
-    text=String(text||'').trim();
-    if(!text) return;
-
-    loadVoices();
-    try { speechSynthesis.cancel(); speechSynthesis.resume(); } catch(e){}
-
-    const u=new SpeechSynthesisUtterance(text);
-    u.lang=selectedVoice ? selectedVoice.lang : 'en-US';
-    if(selectedVoice) u.voice=selectedVoice;
-    u.rate=0.86;
-    u.pitch=1;
-    u.volume=1;
-
-    u.onstart=()=>status('🔊 正在播放……');
-    u.onend=()=>status('播放完成');
-    u.onerror=()=>status('播放失败，请检查设备音量后再试。',3000);
-
-    try { speechSynthesis.speak(u); } catch(e){
-      status('无法启动发音，请再点击一次。',3000);
-    }
-    setTimeout(()=>{try{speechSynthesis.resume()}catch(e){}},100);
-  };
-
-  window.testAudio=function(){
-    window.speak('Hello. Welcome to Biomass Engineering English.');
-  };
-
-  document.addEventListener('click',unlock,{once:true});
-  if('speechSynthesis' in window){
-    loadVoices();
-    speechSynthesis.onvoiceschanged=loadVoices;
-  }
-})();
+let currentAudio=null;
+function playAudio(file){
+  if(currentAudio){currentAudio.pause();currentAudio.currentTime=0;}
+  currentAudio=new Audio("audio/"+file);
+  currentAudio.play().catch(e=>alert("音频播放失败，请确认 audio 文件夹和文件名正确。"));
+}
 </script>
-
-<a class="bottom-home" href="index.html">← 返回课程目录</a></body></html>
+</body></html>
